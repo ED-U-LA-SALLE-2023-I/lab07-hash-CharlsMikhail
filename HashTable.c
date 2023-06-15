@@ -1,14 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 struct HashTable
 {
-    int cantidadDeBuckets;
-    void (*funciónHash)(int tamanioTabla, int rango);
+    int h;
+    int n;
+    int** buckets;
 };
 
+void init(void (int n, int h);
+void insert(HashTable* table, int x);
+void delete(HashTable* table, int x);
+int find(HashTable* table, int x);
 
-void init(struct HashTable* self, void (*funcionHash)(), int _cantidadDeBuckets) {
-    self->cantidadDeBuckets = _cantidadDeBuckets;
-}
 
-void insert(struct HashTable self, int elemento) {
+int main() {
 
+    return 0;
 }
